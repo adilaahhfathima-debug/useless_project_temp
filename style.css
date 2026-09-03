@@ -90,3 +90,78 @@ body {
 .dot.active {
   background: #fdf6e3;
 }
+
+.hidden {
+  display: none;
+}
+
+.home {
+  background: #fdf6e3;
+  color: #1e2b23;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
+
+.app-title {
+  color: #1e4d3a;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.field-label {
+  align-self: flex-start;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.btn-outline {
+  background: #f2ead9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.home .btn-primary {
+  width: 100%;
+  margin-top: 0;
+  background: #1e4d3a;
+  color: #fdf6e3;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  background: #fff;
+  font-size: 11px;
+  color: #999;
+}
+
+.nav-item.active {
+  color: #1e4d3a;
+  font-weight: bold;
+}
