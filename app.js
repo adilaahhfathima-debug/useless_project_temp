@@ -2,6 +2,7 @@ const screen1 = document.getElementById('screen1');
 const screen2 = document.getElementById('screen2');
 const screen3 = document.getElementById('screen3');
 const screen4 = document.getElementById('screen4');
+const screen5 = document.getElementById('screen5');
 
 document.getElementById('letsGoBtn').addEventListener('click', () => {
   screen1.classList.add('hidden');
@@ -50,5 +51,12 @@ document.querySelectorAll('.budget-btn').forEach(btn => {
 document.getElementById('showRouteBtn').addEventListener('click', () => {
   const time = document.querySelector('.time-btn.active').dataset.value;
   const budget = document.querySelector('.budget-btn.active').dataset.value;
-  alert(`Time: ${time}, Budget: ${budget}. Step 5 coming next!`);
+  screen4.classList.add('hidden');
+  screen5.classList.remove('hidden');
+});
+document.querySelectorAll('.route-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const routeName = card.dataset.route;
+    alert(`You picked: ${routeName}. Step 6 coming next!`);
+  });
 });
