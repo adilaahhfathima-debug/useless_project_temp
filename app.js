@@ -8,6 +8,7 @@ const screen7 = document.getElementById('screen7');
 const screen8 = document.getElementById('screen8');
 const screen9 = document.getElementById('screen9');
 const screen10 = document.getElementById('screen10');
+const screen11 = document.getElementById('screen11');
 
 document.getElementById('letsGoBtn').addEventListener('click', () => {
   screen1.classList.add('hidden');
@@ -113,4 +114,12 @@ document.getElementById('openChatBtn').addEventListener('click', () => {
 document.getElementById('backFromChatBtn').addEventListener('click', () => {
   screen10.classList.add('hidden');
   screen9.classList.remove('hidden');
+});
+document.getElementById('backFromSummaryBtn').addEventListener('click', () => {
+  screen11.classList.add('hidden');
+  screen9.classList.remove('hidden');
+});
+
+document.getElementById('saveTripBtn').addEventListener('click', () => {
+  alert('Trip saved to your memories! 🎉 Congrats, you finished the whole flow!');
 });
