@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>VazhiVibe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚗 VazhiVibe</h1>
+
+        <p class="tagline">
+            Don't just reach. Enjoy the way.
+        </p>
+
+        <div class="route-box">
+
+            <label for="from">📍 From</label>
+            <input
+                type="text"
+                id="from"
+                placeholder="Enter starting point"
+            >
+
+            <label for="to">🏁 To</label>
+            <input
+                type="text"
+                id="to"
+                placeholder="Enter destination"
+            >
+
+            <h3>Choose your vibe</h3>
+
+            <div class="modes">
+
+                <button class="mode">⚡ Fast</button>
+
+                <button class="mode">🌴 Relax</button>
+
+                <button class="mode">🍔 Foodie</button>
+
+                <button class="mode">📸 Explore</button>
+
+            </div>
+
+            <button id="findRoute">
+                ✨ Find My Vibe Route
+            </button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
