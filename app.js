@@ -3,6 +3,8 @@ const screen2 = document.getElementById('screen2');
 const screen3 = document.getElementById('screen3');
 const screen4 = document.getElementById('screen4');
 const screen5 = document.getElementById('screen5');
+const screen6 = document.getElementById('screen6');
+const screen7 = document.getElementById('screen7');
 
 document.getElementById('letsGoBtn').addEventListener('click', () => {
   screen1.classList.add('hidden');
@@ -57,6 +59,30 @@ document.getElementById('showRouteBtn').addEventListener('click', () => {
 document.querySelectorAll('.route-card').forEach(card => {
   card.addEventListener('click', () => {
     const routeName = card.dataset.route;
-    alert(`You picked: ${routeName}. Step 6 coming next!`);
+screen5.classList.add('hidden');
+screen6.classList.remove('hidden');
   });
+});
+// Clicking a stop pin opens its detail screen
+document.querySelectorAll('.stop-pin').forEach(pin => {
+  pin.addEventListener('click', () => {
+    if (pin.classList.contains('end')) return; // Kollam pin does nothing
+    screen6.classList.add('hidden');
+    screen7.classList.remove('hidden');
+  });
+});
+
+document.getElementById('backFromStopBtn').addEventListener('click', () => {
+  screen7.classList.add('hidden');
+  screen6.classList.remove('hidden');
+});
+
+document.getElementById('addToRouteBtn').addEventListener('click', () => {
+  alert('Added to your route! ❤️');
+  screen7.classList.add('hidden');
+  screen6.classList.remove('hidden');
+});
+
+document.getElementById('startAdventureBtn').addEventListener('click', () => {
+  alert('Starting the adventure! Step 8 coming next!');
 });

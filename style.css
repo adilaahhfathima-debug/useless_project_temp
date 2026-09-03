@@ -345,3 +345,124 @@ body {
   color: #999;
   margin-top: 2px;
 }
+.mapview, .stopdetail {
+  background: #f2ead9;
+  color: #1e2b23;
+  justify-content: flex-start;
+  padding: 20px;
+  position: relative;
+}
+
+.map-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.back-arrow, .fav-heart {
+  cursor: pointer;
+}
+
+.map-placeholder {
+  width: 100%;
+  background: #dfe8d8;
+  border-radius: 14px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stop-pin {
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.stop-pin.end {
+  background: #1e4d3a;
+  color: #fff;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.stop-tag {
+  font-size: 10px;
+  color: #999;
+}
+
+.route-summary-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+.route-title-sm {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.stopdetail .stop-photo {
+  width: 100%;
+  height: 140px;
+  background: #cbb994;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.stop-info {
+  width: 100%;
+  text-align: left;
+}
+
+.stop-info h3 {
+  margin-bottom: 6px;
+}
+
+.stop-rating, .stop-time {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.why-label, .best-time-label {
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.chat-bubble {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.best-time-value {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.stopdetail .btn-primary {
+  width: 100%;
+  background: #1e4d3a;
+  color: #fdf6e3;
+}
