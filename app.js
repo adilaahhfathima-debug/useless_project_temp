@@ -5,6 +5,9 @@ const screen4 = document.getElementById('screen4');
 const screen5 = document.getElementById('screen5');
 const screen6 = document.getElementById('screen6');
 const screen7 = document.getElementById('screen7');
+const screen8 = document.getElementById('screen8');
+const screen9 = document.getElementById('screen9');
+const screen10 = document.getElementById('screen10');
 
 document.getElementById('letsGoBtn').addEventListener('click', () => {
   screen1.classList.add('hidden');
@@ -84,5 +87,30 @@ document.getElementById('addToRouteBtn').addEventListener('click', () => {
 });
 
 document.getElementById('startAdventureBtn').addEventListener('click', () => {
-  alert('Starting the adventure! Step 8 coming next!');
+  screen6.classList.add('hidden');
+  screen8.classList.remove('hidden');
+});
+document.getElementById('backFromFullRouteBtn').addEventListener('click', () => {
+  screen8.classList.add('hidden');
+  screen6.classList.remove('hidden');
+});
+
+document.getElementById('startNavigationBtn').addEventListener('click', () => {
+  screen8.classList.add('hidden');
+  screen9.classList.remove('hidden');
+});
+
+document.getElementById('exitNavBtn').addEventListener('click', () => {
+  screen9.classList.add('hidden');
+  screen8.classList.remove('hidden');
+});
+
+document.getElementById('openChatBtn').addEventListener('click', () => {
+  screen9.classList.add('hidden');
+  screen10.classList.remove('hidden');
+});
+
+document.getElementById('backFromChatBtn').addEventListener('click', () => {
+  screen10.classList.add('hidden');
+  screen9.classList.remove('hidden');
 });

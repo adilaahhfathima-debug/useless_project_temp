@@ -204,6 +204,71 @@
       <button class="btn-primary" id="addToRouteBtn">Add to My Route ♥</button>
     </div>
   </div>
+  <div class="phone-screen mapview hidden" id="screen8">
+    <div class="map-header">
+      <span class="back-arrow" id="backFromFullRouteBtn">←</span>
+      <span class="fav-heart">♥</span>
+    </div>
+
+    <div class="map-placeholder">
+      <div class="stop-pin end" style="background:#fff;color:#1e2b23;">📍 Sunset Point</div>
+      <div class="stop-pin end" style="background:#fff;color:#1e2b23;">☕ Hill View Café</div>
+      <div class="stop-pin end" style="background:#fff;color:#1e2b23;">🌳 Green Valley Park</div>
+      <div class="stop-pin end" style="background:#fff;color:#1e2b23;">🍛 Spice Route Restaurant</div>
+      <div class="stop-pin end">🏁 Kollam</div>
+    </div>
+
+    <div class="route-summary-card">
+      <div class="route-title-sm">Ultimate Fun Route</div>
+      <div class="route-meta">3 h 20 min • 107 km</div>
+      <button class="btn-primary" id="startNavigationBtn">Start Navigation ▶</button>
+    </div>
+  </div>
+
+  <div class="phone-screen navmode hidden" id="screen9">
+    <div class="nav-banner">
+      <div class="nav-arrow">↑</div>
+      <div class="nav-instruction">
+        <strong>Stay on NH66</strong>
+        <span>12 km to go</span>
+      </div>
+    </div>
+
+    <div class="nav-map">
+      <div class="speed-badge">60<br><small>km/h</small></div>
+    </div>
+
+    <div class="nav-footer">
+      <button class="nav-x" id="exitNavBtn">✕</button>
+      <div class="nav-eta">
+        <strong>2 h 15 min</strong>
+        <span>84 km • 12:30 PM</span>
+      </div>
+      <button class="nav-chat" id="openChatBtn">☰</button>
+    </div>
+  </div>
+
+  <div class="phone-screen chatmode hidden" id="screen10">
+    <div class="chat-header">
+      <span class="back-arrow" id="backFromChatBtn">←</span>
+      <span class="chat-title">Your Annoying Travel Buddy 😄</span>
+      <span class="chat-avatar">🧑</span>
+    </div>
+
+    <div class="chat-messages">
+      <div class="msg received">Enna macha... still in traffic aa? 😊</div>
+      <div class="msg received">Bored ah?</div>
+      <div class="msg sent">Take left in 2 km... oru super sunset spot undu. Life la marakkadhe! 🏞️</div>
+      <div class="msg received">Appo poi adichu oru photo edukalam 📸</div>
+      <div class="msg sent">After that, oru legendary cafe varum... coffee kudichale energy 100x 😎</div>
+    </div>
+
+    <div class="chat-input-bar">
+      <span class="chat-mic">◯</span>
+      <input type="text" class="chat-input" placeholder="Type something...">
+      <span class="chat-send">🎤</span>
+    </div>
+  </div>
   <script src="app.js"></script>
 
 </body>
