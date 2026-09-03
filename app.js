@@ -8,6 +8,20 @@ document.getElementById('letsGoBtn').addEventListener('click', () => {
 
 document.getElementById('myLocationBtn').addEventListener('click', () => {
   document.getElementById('fromInput').value = 'My Location';
+}); 
+const screen3 = document.getElementById('screen3');
+
+document.getElementById('planJourneyBtn').addEventListener('click', () => {
+  // (keep the existing validation code here, then add:)
+  screen2.classList.add('hidden');
+  screen3.classList.remove('hidden');
+});
+
+document.getElementById('nextPrefBtn').addEventListener('click', () => {
+  const selected = Array.from(document.querySelectorAll('.pref-check:checked'))
+    .map(cb => cb.value);
+  console.log('Selected vibes:', selected);
+  alert(`You picked: ${selected.join(', ')}. Step 4 coming next!`);
 });
 
 document.getElementById('planJourneyBtn').addEventListener('click', () => {
