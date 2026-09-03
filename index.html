@@ -1,65 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>VazhiVibe</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entha Poyaalo?</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="container">
+  <div class="phone-screen splash">
+    <h1 class="logo">ENTHA<br>POYAALO?</h1>
+    <p class="tagline">Don't just reach.<br>Experience the way 😍</p>
 
-        <h1>🚗 VazhiVibe</h1>
-
-        <p class="tagline">
-            Don't just reach. Enjoy the way.
-        </p>
-
-        <div class="route-box">
-
-            <label for="from">📍 From</label>
-            <input
-                type="text"
-                id="from"
-                placeholder="Enter starting point"
-            >
-
-            <label for="to">🏁 To</label>
-            <input
-                type="text"
-                id="to"
-                placeholder="Enter destination"
-            >
-
-            <h3>Choose your vibe</h3>
-
-            <div class="modes">
-
-                <button class="mode">⚡ Fast</button>
-
-                <button class="mode">🌴 Relax</button>
-
-                <button class="mode">🍔 Foodie</button>
-
-                <button class="mode">📸 Explore</button>
-
-            </div>
-
-            <button id="findRoute">
-                ✨ Find My Vibe Route
-            </button>
-
-        </div>
-
-        <div id="result"></div>
-
+    <div class="signpost left">
+      <div class="sign">NATURE</div>
+      <div class="sign">CAFÉ</div>
+    </div>
+    <div class="signpost right">
+      <div class="sign">LIFE</div>
+      <div class="sign">FUN</div>
+      <div class="sign">HOTELS</div>
     </div>
 
-    <script src="script.js"></script>
+    <button class="btn-primary" id="letsGoBtn">Let's Go!</button>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
 
+  <script src="app.js"></script>
 </body>
 </html>
